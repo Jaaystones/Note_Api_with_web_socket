@@ -8,7 +8,7 @@ ws.on('open', () => {
 
 ws.on('message', (data) => {
     const message = JSON.parse(data);
-    console.log('Received message:', message); // Detailed logging
+    console.log('Received message:', message); 
 });
 
 ws.on('close', () => {
@@ -27,11 +27,3 @@ const reconnectWebSocket = () => {
         ws = new WebSocket('ws://localhost:7000');
     }, 1000); // Delay before reconnecting
 };
-
-// // Function to clear stored messages (if any)
-// const clearStoredMessages = () => {
-//     // Implement logic to clear stored messages if using any storage
-// };
-
-// // Call clearStoredMessages before establishing the connection
-// clearStoredMessages();

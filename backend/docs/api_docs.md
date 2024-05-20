@@ -2,6 +2,7 @@
 
 
 # AUTH
+This handles all authentication requests.
 ```
 // @desc Login
 // @route POST /auth/login
@@ -32,6 +33,7 @@ response: {
 ```
 
 # USERS
+This handles all users requests.
 ```
 //create new user
 //@ post/users
@@ -104,6 +106,7 @@ response: {"Username JayStone with ID 652eb2618dc8eaddb80a6a06 deleted"}
 ```
 
 # NOTES
+This accepts all note requests
 ```
 //@ post request
 // Creates a new note
@@ -146,7 +149,7 @@ request.body = {
 		"user": "652fa5a8bca23c975c368646",
 		"completed": true
 }
-response = { "'Note Title' updated" }
+response = { `${Note Title} updated` }
 
 // @desc Delete a note
 // @route DELETE /notes
@@ -157,3 +160,4 @@ request.body = {
 }
 response = { "Note 'Data Bills' with ID 653111d96bfdcbc92637f961 deleted" }
 ```
+

@@ -91,6 +91,7 @@ export default verifyJWT;
 + Checks for the presence of an authorization header and validates its format.
 + Verifies the JWT token using the secret key.
 + Adds user information to the request object if the token is valid.
++ Access and refresh tokens are to be manually stored in the header using the Authorization header.
 + Returns a 401 status code if the token is missing or invalid, and a 403 status code if the token verification fails.
 
 ## webSocket.js

@@ -3,9 +3,10 @@
 
 ## Description
 
-CMMS is a Computerized Project Management System that helps you efficiently manage your projects. This system is built with Node.js, Express, and MongoDB, providing features for secure user authentication, data storage, and more. All of these features has been applied to build a note app for storing, and processing documents for a business.
+CMMS is a Computerized Project Management System that helps you efficiently manage your projects. This system is built with Node.js, Express, WebSocket and MongoDB, providing features for secure user authentication, data storage, and more. All of these features has been applied to build a note app for storing, and processing documents for a business.
 
 ## Project Overview
+``` bash
 Note-Backend
 ├── backend
 │   ├── config
@@ -29,7 +30,9 @@ Note-Backend
 |   |   |   └── updateUser.js
 |   ├── docs
 |   |   └── api_docs.md
+|   |   └── api_middleware.md
 |   |   └── data_docs.md
+|   |   └── route_docs.md
 |   |   └── socket_stream.md
 │   ├── middleware
 │   │   └── errorHandling.js
@@ -52,16 +55,16 @@ Note-Backend
 |   └── .env
 |   └── .gitignore
 
-
+```
 ## Installation
 
 To get started with CMMS, follow these steps:
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/Jaaystones/Note-Api.git
+   git clone https://github.com/Jaaystones/Note_Api_with_web_socket.git
 
-   cd Note-API
+   cd Note_Api_with_web_socket 
 
    ```
 
@@ -70,19 +73,37 @@ To get started with CMMS, follow these steps:
 npm install
 
 ```
-3. Start the application server
+3. Start the express application server
 ```
 npm run dev
+
+```
+4. Start the Websocket server on nanother terminal
+```
+node client.js
 
 ```
 ## Usage
 ```
 To use this application, follow these instructions:
 
-Access the application in your web browser by navigating to http://localhost:3000 
-(replace your-port with the port you specified in your environment variables).
+- Access the application using postman or insomnia by navigating to http://localhost:7000 
+- (Remember to replace your-port with the port you specified in your environment variables).
+- Create a .env file in your root directory and fill with the follwoing configuration
+```
+DB_URL="replace with mongodb uri"
+PORT=7000
+NODE_ENV=development
+JWT_SECRET="replace with secret key"
+REFRESH_TOKEN_SECRET="replace with secret key"
+ACCESS_TOKEN_SECRET="replace with secret key"
+
+ps: Secret keys can be generated using crypto oor done manually
+```
+
 
 Register or log in to access the project management features.
+Master access is found in the [Api Endpoints](docs/api_docs.md)
 
 Create, update, and manage your projects, tasks, and users efficiently.
 ```

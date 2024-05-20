@@ -1,15 +1,18 @@
 import { WebSocketServer, WebSocket } from 'ws';
 
+// Create an arrary to store objects
 let wssClients = [];
 
+// add a client
 export const addClient = (ws) => {
     wssClients.push(ws);
 };
-
+//remove a client
 export const removeClient = (ws) => {
     wssClients = wssClients.filter(client => client !== ws);
 };
 
+//Send the brodcast message to the server
 export const broadcastMessage = (message) => {
     console.log('Broadcasting message:', message); // Add logging here to see if broadcastMessage is called
     wssClients.forEach(client => {
@@ -19,6 +22,7 @@ export const broadcastMessage = (message) => {
     });
 };
 
+// WebSocket server setup
 export const setupWebSocket = (server) => {
     const wss = new WebSocketServer({ server });
 

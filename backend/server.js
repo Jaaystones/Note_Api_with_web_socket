@@ -58,18 +58,8 @@ const server = app.listen(PORT, () => {
     console.log(`SERVER RUNNING ON PORT ${PORT}`);
 });
 
+//Launch server
 setupWebSocket(server);
-// // Create a new WebSocket server instance and attach it to the HTTP server
-// const wss = new WebSocketServer({ server });
-
-// wss.on('connection', (ws) => {
-//     console.log('Client Connected');
-//     sendData(ws);
-
-//     ws.on('close', () => {
-//         console.log('Client Disconnected');
-//     });
-// });
 
 // Handle database connection events
 mongoose.connection.once('open', () => {
