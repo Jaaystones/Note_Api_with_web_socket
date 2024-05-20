@@ -90,7 +90,7 @@ To use this application, follow these instructions:
 - Access the application using postman or insomnia by navigating to http://localhost:7000 
 - (Remember to replace your-port with the port you specified in your environment variables).
 - Create a .env file in your root directory and fill with the follwoing configuration
-```
+
 DB_URL="replace with mongodb uri"
 PORT=7000
 NODE_ENV=development
@@ -98,15 +98,14 @@ JWT_SECRET="replace with secret key"
 REFRESH_TOKEN_SECRET="replace with secret key"
 ACCESS_TOKEN_SECRET="replace with secret key"
 
-ps: Secret keys can be generated using crypto oor done manually
+ps: Secret keys can be generated using crypto or done manually
 ```
-
 
 Register or log in to access the project management features.
 Master access is found in the [Api Endpoints](docs/api_docs.md)
 
 Create, update, and manage your projects, tasks, and users efficiently.
-```
+
 
 ## Features
 + User authentication with JWT (JSON Web Tokens).
@@ -124,13 +123,15 @@ Create, update, and manage your projects, tasks, and users efficiently.
 Contributions are welcome! If you want to contribute to this project, please follow these guidelines:
 
 ## Instructions
+```
++ Fork the repository
++ Create a new branch for your feature or bug fix
++ Make your changes
++ Commit your changes with descriptive commit messages
++ Push your changes to your fork
++ Submit a pull request
 
-[x] Fork the repository
-[x] Create a new branch for your feature or bug fix
-[x] Make your changes
-[x] Commit your changes with descriptive commit messages
-[x] Push your changes to your fork
-[x] Submit a pull request
+```
 
 ## License :wrench:
 This project is licensed under the ISC License.
