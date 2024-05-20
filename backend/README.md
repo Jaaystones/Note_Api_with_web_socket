@@ -64,7 +64,8 @@ To get started with CMMS, follow these steps:
    ```bash
    git clone https://github.com/Jaaystones/Note_Api_with_web_socket.git
 
-   cd Note_Api_with_web_socket 
+   cd Note_Api_with_web_socket
+   cd backend
 
    ```
 
