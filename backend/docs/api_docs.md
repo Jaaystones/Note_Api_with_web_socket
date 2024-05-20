@@ -1,5 +1,6 @@
 ## Here is a documentation of the Api endpoints
 
+While testing the Api endpoints on either postman or insomnia, make sure to add the access token to the header making use of the logic in the [verifyJwt.js](middleware/verifyJwt.js)
 
 # AUTH
 This handles all authentication requests.
