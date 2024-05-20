@@ -118,6 +118,8 @@ Create, update, and manage your projects, tasks, and users efficiently.
 - [Api Endpoints](docs/api_docs.md)
 - [ Models Documentation](docs/data_docs.md)
 - [ Socket Stream Documentation](docs/socket_stream.md)
+- [ Api middleware documentation](docs/api_middleware.md)
+- [Routing Documentation](docs/routing.md)
 
 ## Contributions
 Contributions are welcome! If you want to contribute to this project, please follow these guidelines:
